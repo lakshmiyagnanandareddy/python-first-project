@@ -34,7 +34,7 @@ def main():
     a = arr.array("i", [1, 2, 1, 3, 4, 4, 7, 5])
     j = 0
     k = len(a)
-    ex(k, a, j)
+    ex(k, a, j,a)
 
 
 main()

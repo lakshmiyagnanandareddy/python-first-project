@@ -103,8 +103,6 @@ def numpy():
         print("multiplication", "\n", m*n)
     matrx()
 
-numpy()
 # difference between array and list is integer is seperated by ',' in list and '_' in array.
-
 
 

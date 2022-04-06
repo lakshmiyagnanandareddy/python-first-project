@@ -2,7 +2,7 @@ import array as arr
 
 
 def main():
-
+    """
     def removes_duplicate_elements_in_array(array_list, array_list_index):
         if array_list_index == len(array_list):
             return array_list
@@ -15,12 +15,19 @@ def main():
                     array_list.remove(removing_element)
                     return removes_duplicate_elements_in_array(array_list, array_list_index)
 
-            return removes_duplicate_elements_in_array(array_list, array_list_index + 1)
+            return removes_duplicate_elements_in_array(array_list, array_list_index + 1)"""
+
+
+    def removes_duplicate_elements_in_array(array_element):
+        array_set = set(array_element)
+        return array_set
 
     array_list = arr.array("i", [1, 2, 1, 3, 4, 4, 7, 5])
-    array_list_index = 0
-    array_list = removes_duplicate_elements_in_array(array_list, array_list_index)
+    # array_list_index = 0
+    array_list = removes_duplicate_elements_in_array(array_list)
     print(array_list)
+
+
 
 
 def find_number_of_occurrence():
@@ -37,7 +44,9 @@ def find_number_of_occurrence():
 
     array_list = arr.array("i", [1, 3, 4, 6, 3, 1, 1])
     array_list_index = 0
-    find_number_of_occurrence(array_list, array_list_index)
+    array_number = int(input("enter the number to find the occurrences"))
+    print("The number of occurrences of element", array_number, "is", array_list.count(array_number))
+    # find_number_of_occurrence(array_list, array_list_index)
 
 
 def remove():
@@ -49,21 +58,14 @@ def remove():
 
 def find_list_contains_any_duplicate_element():
 
-    def find_list_contain_any_duplicate_element(array_list, array_list_index):
-        if array_list_index == len(array_list):
-            return True
-        elif array_list_index < len(array_list):
-            for i in range(len(array_list)):
-                if i == array_list_index:
-                    pass
-                elif array_list[i] == array_list[array_list_index]:
-                    return False
+    def find_list_contain_any_duplicate_element(array_element):
+        for i in array_element:
+            if array_element.count(i) == 2:
+                return False
+        return True
 
-            return find_list_contain_any_duplicate_element(array_list, array_list_index + 1)
-
-        array_list = arr.array("i", [1, 2, 3, 4, 5])
-        array_list_index = 0
-        print((find_list_contain_any_duplicate_element(array_list, array_list_index)))
+    array_list = arr.array("i", [1, 2, 3, 4, 5, 5])
+    print((find_list_contain_any_duplicate_element(array_list)))
 
 
 def find_first_repeating_number():
@@ -124,4 +126,4 @@ def mama():
     print(tips_none([0, 0, 0]))
 
 
-finding_sequence()
+find_list_contains_any_duplicate_element()

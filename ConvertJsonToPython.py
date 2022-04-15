@@ -1,7 +1,7 @@
 def waste():
     import json
     import sys
-    json_file = open("Json.json", "r")
+    json_file = open("jsonfiles/student_details.json", "r")
     json_data = json_file.read()
     students_obj = json.loads(json_data)
     a = json.dumps(students_obj, indent="\t", separators=(",", ":"), sort_keys=False)   # indent=will give indentation in every distribution
@@ -17,7 +17,7 @@ def waste():
 
 def convert_json_to_python1():
     import json
-    open_json = open("Json.json", "r")
+    open_json = open("jsonfiles/student_details.json", "r")
     python = json.load(open_json)
     print(python)
 
@@ -31,7 +31,7 @@ def convert_json_to_python2():
 
 def indentation_and_sort_key():
     import json
-    open_json_file = open("Json.json", "r")
+    open_json_file = open("jsonfiles/student_details.json", "r")
     json_file = json.load(open_json_file)
     # python = json.dumps(json_file, indent=4, sort_keys=True)
     print(json_file)
@@ -49,3 +49,6 @@ def encode():
 
     def encoder(o):
         if isinstance in
+
+
+convert_json_to_python1()

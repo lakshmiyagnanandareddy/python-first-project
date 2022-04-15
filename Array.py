@@ -103,6 +103,36 @@ def numpy():
         print("multiplication", "\n", m*n)
     matrx()
 
+
+def testing():
+    import array as arr
+    file = open("08-04-2022array.txt", "wb")
+    arr.array("i", [1, 2, 3, 4, 7]).tofile(file)
+    file.close()
+    file = open("08-04-2022array.txt", "rb")
+    # file.extend([3, 4])    # extend will add elements in the last of the array.
+    empty = arr.array("i")
+    empty.fromfile(file, 3)     # fromfile will read the elements from the file.
+    print(empty)
+    empty.fromfile(file, 1)
+    print(empty)
+    my_list = [1]
+    copy_list = [1, 2]
+    my_list.append(copy_list)
+    print(my_list)
+    file.close()
+    array_list = arr.array("i", [1, 2, 3, 4, 5, 6, 6, 3])
+    print(array_list.index(4))  # index- it will give the index number of the given number.
+    array_list.insert(4, 1)     # insert- it will insert value at (4th index, value 1) is inserted.
+    print(array_list)
+    print(array_list.pop(3))    # pop-it will remove the 3rd index element and display's which element is going to remove.
+    print(array_list)
+    array_list.remove(5)    # it will remove the element in the list.
+    print(array_list)
+    array_list.reverse()    # it will print the reverse of that element.
+    print(array_list)
+    print(array_list.tolist())      # it will convert array to ordinary list.
+    array_list.tobytes()
 # difference between array and list is integer is seperated by ',' in list and '_' in array.
 
-
+testing()

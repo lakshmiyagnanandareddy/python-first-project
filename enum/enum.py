@@ -30,12 +30,18 @@ for shake in Shakes:
 apples = {}
 apples[Color.RED] = "abc"
 apples[Color.GREEN] = 20
+<<<<<<< HEAD
 
 print(apples)
 print(apples[Color(1)])
 
 print(Color.RED.value)
 
+=======
+print(apples)
+print(Color.RED.value)
+print(apples[Color.RED])
+>>>>>>> origin/master
 print(Color(1))
 print(Color["RED"])
 
@@ -52,12 +58,19 @@ except:
     print("Type error")
 """
 
+<<<<<<< HEAD
 """
+=======
+>>>>>>> origin/master
 from enum import Enum, unique
 
 
 @unique
+<<<<<<< HEAD
 class numbers(Enum):    # "@unique" - it will take duplicate values, and it will raise type error.
+=======
+class numbers(Enum):
+>>>>>>> origin/master
     one = 5
     two = 8
     three = 9
@@ -65,6 +78,7 @@ class numbers(Enum):    # "@unique" - it will take duplicate values, and it will
 
 
 for number in numbers:
+<<<<<<< HEAD
     print(number)
 """
 from enum import Enum, auto
@@ -201,3 +215,6 @@ class color_obj(Enum):
 
 
 print(color_obj.RE)
+=======
+    print(number)
+>>>>>>> origin/master

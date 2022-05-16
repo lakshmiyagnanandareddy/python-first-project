@@ -6,10 +6,11 @@ Sample Output:
 25
 48
 """
-x = [10]
-y = [12]
+a = [10]
+x = [8]
+y = [6]
 
-print("Addition of the 15", list(map(lambda x: x+15, x)))
+print("Addition of the 15", list(map(lambda x: x+15, a)))
 
 print("multiplicaton of x and y", list(map(lambda x, y: x * y, x, y)))
 

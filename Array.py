@@ -16,6 +16,7 @@ test_char = arr.array("u", ["a", "b", "c"])
 for i in test_char:
     print(i)
 
+print("copy")
 copy_array = arr.array(testtt.typecode, (a*a for a in testtt))
 for i in copy_array:
     print(i)

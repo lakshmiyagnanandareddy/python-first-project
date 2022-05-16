@@ -8,39 +8,39 @@ modulus = x%y # reminder
 exponention = x**y
 floorDivision = x//y # it will give division which is in whole numbers
 
-print("addition",addition)
-print("substraction",substraction)
-print("multipication",multiplication)
-print("division",division)
-print("modulus",modulus)
-print("exponention",exponention)
-print("floor division",floorDivision)
+print("addition", addition)
+print("substraction", substraction)
+print("multipication", multiplication)
+print("division", division)
+print("modulus", modulus)
+print("exponention", exponention)
+print("floor division", floorDivision)
 
 # assignment operators
 x += 5 # x+=5 : x = x+5
-print("addition in an assignment operator",x)
+print("addition in an assignment operator", x)
 x -= 5 # x-=5 : x = x-5
-print("substraction of an assignment operator",x)
+print("substraction of an assignment operator", x)
 x *= 5 # x*=5 : x = x*5
-print("multiplication of an assignment operator",x)
+print("multiplication of an assignment operator", x)
 x /= 5 # x/=5 : x = x/5
-print("division of an assignment operator",x)
+print("division of an assignment operator", x)
 x %= 5 # x%=5 : x = x%5
-print("modulus of an assignment operator",x)
+print("modulus of an assignment operator", x)
 x **= 5 # x**=5 : x = x**5
-print("exponention of an assignment operator",x)
+print("exponention of an assignment operator", x)
 x //= 5 # x//=5 : x = x//5
-print("floor division of an assignment operator",x)
+print("floor division of an assignment operator", x)
 x &= 5 # x&=5 : x = x&5
-print("bitwise_and of an assignment operator",x)
+print("bitwise_and of an assignment operator", x)
 x |= 5 # x|=5 : x = x|5
-print("bitwise_or of an assignment operator",x)
+print("bitwise_or of an assignment operator", x)
 x ^= 5 # x^=5 : x = x^5
-print("bitwise_nor of an assignment operator",x)
+print("bitwise_nor of an assignment operator", x)
 x <<= 5 # x<<=5  ; x = x<<5
-print("bitwise_left_shift of an assignment operator",x)
+print("bitwise_left_shift of an assignment operator", x)
 x >>= 5 # x>>=5 ; x = x>>5
-print("bitwise_right_shift of an assignment operator",x)
+print("bitwise_right_shift of an assignment operator", x)
 
 #comparison_operators
 print("x value is",x)

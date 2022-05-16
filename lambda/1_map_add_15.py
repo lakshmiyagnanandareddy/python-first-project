@@ -13,3 +13,4 @@ print("Addition of the 15", list(map(lambda x: x+15, x)))
 
 print("multiplicaton of x and y", list(map(lambda x, y: x * y, x, y)))
 
+

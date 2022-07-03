@@ -5,5 +5,8 @@ find the total sum of the new list's elements.
 """
 from functools import reduce
 my_list = [99.3890, -3.5, 5, -0.7123, -9, -0.003]
-print(list(map(lambda x: x, my_list)))
-print(reduce(lambda x, y: x + y, my_list))
+
+
+
+a = map(sum(my_list), my_list)
+print(list(a))

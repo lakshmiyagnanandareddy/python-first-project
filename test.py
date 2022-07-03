@@ -1,5 +1,23 @@
-x = 1 # here x is assigned as 1
-print(x)
-print("x", x,     "x")#1.here we have to observe the fullstop"," is used as "+" compare to java
-# 2.also it atomatically gives only one space
-#3.here we don't want to provide spacing if we give one (or)morethan one it will remains one one
+def factorial(x):
+    """This is a recursive function
+    to find the factorial of an integer"""
+
+    if x == 1:
+        return 1
+    else:
+        return (x * factorial(x-1))
+
+
+num = 3
+print("The factorial of", num, "is", factorial(num))
+
+
+def power(num):
+    if num == 1:
+        return 1
+    else:
+        return (num ** 7)
+
+
+num = 4
+print("the power of 4 of", num, power(num))

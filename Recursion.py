@@ -198,5 +198,72 @@ def interview3():
     main()
 
 
-interview3()
+def counting_by_2(number):
+    if number == 0:
+        return print("zero")
+    for i in range(number):
+        print("*", end=" ")
+    print("")
+    counting_by_2(number-2)
 
+#    if number > 0:
+#counting_by_2(number-2)
+
+
+def factorial(number):
+    if number == 1:
+        return number
+    else:
+        return number * factorial(number-1)
+
+
+number = 5
+print(factorial(number))
+
+
+def fibonacci(count, number, first_number, second_number):
+    if count == 0 <= number:
+        print(first_number)
+        return fibonacci(count+1, number, first_number, second_number)
+    elif count == 1 <= number:
+        print(second_number)
+        return fibonacci(count+1, number, first_number, second_number)
+    elif number >= count:
+        print(first_number + second_number)
+        return fibonacci(count+1, number, second_number, first_number+second_number)
+
+"""
+count = 0
+number = int(input("Enter the number of fibonacci numbers :"))
+first_number = 0
+second_number = 1
+fibonacci(count, number, first_number, second_number)
+"""
+
+def reverse_string(string):
+    if string[-1] == string[0]:
+        return string[0]
+    return reverse_string(string[1:]) + string[0]
+
+
+print(reverse_string("Desert"))
+
+
+def seperate(lis1, lis2, lis3):
+    if len(lis3) == 0:
+        print(lis1[2])
+        lis3.append(lis1[2])
+        lis1.remove(lis1[2])
+        return seperate(lis1, lis2, lis3)
+    elif len(lis2) == 0:
+        lis2.append(lis1[1])
+        lis1.remove(lis1[1])
+        print("lis1", lis1)
+        print("lis1", lis2)
+        print("lis1", lis3)
+
+
+lis1 = [0, 1, 2]
+lis2 = []
+lis3 = []
+seperate(lis1, lis2, lis3)
